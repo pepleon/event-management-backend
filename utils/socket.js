@@ -5,7 +5,7 @@ const initializeSocket = (server) => {
 
   const io = socket(server, {
     cors: {
-      origin: "http://localhost:5174",
+      origin: "https://event-management-client-x8h9.onrender.com",
     },
   });
 
