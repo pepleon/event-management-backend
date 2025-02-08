@@ -85,13 +85,10 @@ router.post('/login', async (req, res) => {
 
 
 router.post("/logout", async (req, res) => {
-   res.clearCookie("token", {
-    httpOnly: true, 
-    secure: process.env.NODE_ENV === "production", 
-    sameSite: "None", 
-    path: "/",
-    domain: "https://event-management-client-x8h9.onrender.com", 
+    res.cookie("token", null, {
+      expires: new Date(Date.now()),
   });
+
 
   res.send("LogOut Successful!!");
 
