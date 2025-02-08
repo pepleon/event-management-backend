@@ -4,7 +4,6 @@ const socket = require("socket.io")
 const initializeSocket = (server) => {
 
   const io = socket(server, {
-    path: '/api/socket.io',
     cors: {
       origin: "https://event-management-client-x8h9.onrender.com",
     },
