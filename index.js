@@ -16,7 +16,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: "http://localhost:5174",
+  origin: "https://event-management-client-x8h9.onrender.com",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
