@@ -1,4 +1,4 @@
-If you want to run the backend and frontend on a local host, please change the cors origin to localhost:http://localhost:5173/ in a cors origin for both index.js and socket.js
+If you want to run both the backend and frontend on a local host, please set the CORS origin to `http://localhost:5173/` in the CORS configuration for both `index.js` and `socket.js`.
 
 The existing user credentials are:
 
